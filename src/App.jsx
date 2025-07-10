@@ -66,7 +66,7 @@ function App() {
 
       {error && <p className="error">{error}</p>}
 
-      {/* <div className="results">
+      <div className="results">
         {loading && <p>Loading...</p>}
         {books.length === 0 && !loading && !error && <p>No results found.</p>}
         {books.map((book, index) => (
@@ -75,7 +75,7 @@ function App() {
               <img
                 src={`https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`}
                 alt={book.title}
-              /> */}
+              />
             )}
             <h3>{book.title}</h3>
             <p><strong>Author:</strong> {book.author_name?.join(', ') || 'Unknown'}</p>
